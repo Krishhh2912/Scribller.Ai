@@ -4,7 +4,6 @@ import { loadFull } from "tsparticles";
 import "./App.css";
 import particlesOptions from "./particles.json";
 
-const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
 function App() {
   const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
   const [init, setInit] = useState(false);
