@@ -4,8 +4,9 @@ import { loadFull } from "tsparticles";
 import "./App.css";
 import particlesOptions from "./particles.json";
 
-// const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
 function App() {
+  const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
   const [init, setInit] = useState(false);
   const [userInput, setUserInput] = useState('');
   const [generatedImage, setGeneratedImage] = useState(null);
@@ -28,7 +29,7 @@ function App() {
     const response = await fetch(
       "https://api-inference.huggingface.co/models/MdEndan/stable-diffusion-lora-fine-tuned",
       {
-        headers: { Authorization: "Bearer ${process.env.REACT_APP_HUGGINGFACE_TOKEN}" },
+        headers: { Authorization: "Bearer ${process.env.ACCESS_TOKEN}" },
         method: "POST",
         body: JSON.stringify(data),
       }
