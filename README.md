@@ -1,5 +1,9 @@
 ## Available Scripts
 
+## To run this Project 
+Create and add your own Access_Token from Hugging Face https://huggingface.co 
+Add access token App.js 
+ 
 In the project directory, you can run:
 
 ### `npm start`
