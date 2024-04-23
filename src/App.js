@@ -28,7 +28,7 @@ function App() {
     const response = await fetch(
       "https://api-inference.huggingface.co/models/MdEndan/stable-diffusion-lora-fine-tuned",
       {
-        headers: { Authorization: "Bearer ${process.evc.ACCESS_TOKEN}" },
+        headers: { Authorization: "Bearer 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" },
         method: "POST",
         body: JSON.stringify(data),
       }
